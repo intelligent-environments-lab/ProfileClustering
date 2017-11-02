@@ -1,4 +1,4 @@
-# ProfileClustering 
+# Profile Clustering Project with [BUDS Lab](http://www.budslab.org/) 
 
 A project focused on extracting the right topology of building utilization from raw whole building sensor data
 
