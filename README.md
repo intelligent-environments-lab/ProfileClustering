@@ -8,11 +8,11 @@ A project focused on extracting the right topology of building utilization from 
 
 2. Preprocessing
 
-- We need to detect and eliminate outliers from the dataset. 
+- We need to detect and eliminate outliers from the dataset. The detail outlier detection method is described in [here](preprocessing_PILOT.ipynb).
 
 3. metadata analysis
 
-- You can find metadata analysis result for the datasets. ([MIT](mit.ipynb), [UTEXAS](utexas.ipynb), [PECAN](pecan.ipynb), [TOTAL](Total.ipynb))
+- You can find metadata analysis result for the datasets ([MIT](mit.ipynb), [UTEXAS](utexas.ipynb), [PECAN](pecan.ipynb), [GENOME](https://github.com/buds-lab/the-building-data-genome-project), [TOTAL](Total.ipynb)).
 
 3. Inner cluster analysis within a building
 
