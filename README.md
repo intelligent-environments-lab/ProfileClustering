@@ -8,7 +8,7 @@ A project focused on extracting the right topology of building utilization from 
 
 2. Preprocessing
 
-- We need to detect and eliminate outliers from the dataset. The detail outlier detection method is described in [here](preprocessing_PILOT.ipynb).
+- We need to detect and eliminate outliers from the dataset. The detail outlier detection method is described in [here](Preprocessing_PILOT.ipynb).
 
 3. metadata analysis
 
