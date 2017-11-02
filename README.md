@@ -12,7 +12,7 @@ A project focused on extracting the right topology of building utilization from 
 
 3. metadata analysis
 
-- You can find metadata analysis result for the datasets. ([Transformation(csv > hdf5)](Transformation Code.ipynb)
+- You can find metadata analysis result for the datasets. ([MIT](mit.ipynb), [UTEXAS](utexas.ipynb), [PECAN](pecan.ipynb), [TOTAL](Total.ipynb))
 
 3. Inner cluster analysis within a building
 
