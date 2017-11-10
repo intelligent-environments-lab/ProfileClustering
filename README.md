@@ -4,7 +4,11 @@ A project focused on extracting the right topology of building utilization from 
 
 1. Data collection
 
-- With multiple data sources (i.e., UTEXAS, MIT, PECAN, IRELAND, GENOME, ...), we choose .hdf5 data format to deal with a large size dataset. All the raw datasets are uploaded externally due to the limitation of uploading size. The transformation process is described in this Jupyter notebook ([Transformation(csv > hdf5)](Transformation_Code.ipynb)). After running transformation code, we would get a complete hdf5 file for the whole dataset, and this dataset has 4 attributes (i.e., location, industry, sub-industry, primary space usage, SQFT, EUI) 
+- With multiple data sources (i.e., UTEXAS, MIT, PECAN, IRELAND, GENOME, ...), we choose .hdf5 data format to deal with a large size dataset. All the raw datasets are uploaded externally due to the limitation of uploading size. The transformation process is conducted by two stages. After running two ipython notebook below, we would get a complete hdf5 file for the whole dataset. 
+
+- [data_collection_1](data_collection_1.ipynb) : Read temporal dataset and metadata (i.e., Industry, Sub-industry, Primary usage type, Region, Area) to generate .hdf5 file.
+
+- [data_collection_2](data_collection_2.ipynb) : Explain outlier prunning method and apply [loadshape library](https://pypi.python.org/pypi/loadshape/) to fill outliers. In addition, Energy use intensity (kBtu/sqft) is calculated and stored as metadata.
 
 2. Preprocessing
 
@@ -14,10 +18,10 @@ A project focused on extracting the right topology of building utilization from 
 
 - You can find metadata analysis result for the datasets ([MIT](mit.ipynb), [UTEXAS](utexas.ipynb), [PECAN](pecan.ipynb), [GENOME](https://github.com/buds-lab/the-building-data-genome-project)). Combining all the datasets into a single .hdf5 file, we conducted a grand metadata analysis ([Metadata](Total.ipynb), [SQFT](GGplot.ipynb)).
 
-3. Inner cluster analysis within a building
+4. Inner cluster analysis within a building
 
 -
 
-4. Cluster anlysis for all the buildings (vs EUI, program)
+5. Cluster anlysis for all the buildings (vs EUI, program)
 
 -
