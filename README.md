@@ -12,7 +12,11 @@ A project focused on extracting the right topology of building utilization from 
 
 2. metadata analysis
 
-- You can find metadata analysis result for the datasets ([MIT](mit.ipynb), [UTEXAS](utexas.ipynb), [PECAN](pecan.ipynb), [GENOME](https://github.com/buds-lab/the-building-data-genome-project)). Combining all the datasets into a single .hdf5 file, we conducted a grand metadata analysis ([Metadata](Total.ipynb), [SQFT](GGplot.ipynb)).
+- You can find metadata analysis result for the datasets.
+
+- For each dataset: [MIT](mit.ipynb), [UTEXAS](utexas.ipynb), [PECAN](pecan.ipynb), [GENOME](https://github.com/buds-lab/the-building-data-genome-project). 
+
+- Based on industry type: [Total](Total.ipynb), [Total_area](GGplot.ipynb), [Non-residential](meta_nonresi.ipynb), [Residential](meta_resi.ipynb). 
 
 3. Inner cluster analysis within a building
 
