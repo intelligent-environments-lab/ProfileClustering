@@ -18,10 +18,8 @@ A project focused on extracting the right topology of building utilization from 
 
 - Based on industry type: [Total](Total.ipynb), [Total_area](GGplot.ipynb), [Non-residential](meta_nonresi.ipynb), [Residential](meta_resi.ipynb). 
 
-3. Inner cluster analysis within a building
+3. Clustering analysis (vs metadata)
 
 -
 
-4. Cluster anlysis for all the buildings (vs EUI, program)
 
--
