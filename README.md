@@ -8,7 +8,9 @@ A project focused on extracting the right topology of building utilization from 
 
 - [data_collection_1](data_collection_1.ipynb) : Read temporal dataset and metadata (i.e., Industry, Sub-industry, Primary usage type, Region, Area) to generate .hdf5 file.
 
-- [data_collection_2](data_collection_2.ipynb) : Explain outlier prunning method and how we fill outliers. In addition, Energy use intensity (kBtu/sqft) is calculated and stored as metadata.
+- [data_collection_2](data_collection_2.ipynb) : Explain outlier prunning method and visualize before/after outlier elimination.
+
+- [data_collection_3](data_collection_3.ipynb) : Explain how we fill outliers. In addition, Energy use intensity (kBtu/sqft) is calculated and stored as metadata.
 
 2. metadata analysis
 
