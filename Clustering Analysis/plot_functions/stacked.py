@@ -6,11 +6,12 @@ import pandas as pd
 
 # Matplotlib
 import matplotlib.pyplot as plt
+from matplotlib import cm
 
 def NULL_FUNC():
     return
 
-def plot_stacked(col, data, by='cluster', proportion=True, proc_plot=NULL_FUNC):
+def plot_stacked(col, data, by='cluster', proportion=True, proc_plot=NULL_FUNC, plot_from_df=None):
     '''Plots a horizontal stacked bar chart
     col: name of the field to be plotted
     by: which to split the data into subgroups on (cluster or value)
@@ -49,17 +50,23 @@ def plot_stacked(col, data, by='cluster', proportion=True, proc_plot=NULL_FUNC):
                 cluster_stacked[c].append(0)
     pd_cluster_stacked = pd.DataFrame.from_dict(cluster_stacked)
     pd_cluster_stacked.index = col_vals
-    if proportion:
-        for i in range(pd_cluster_stacked.shape[0]):
-            total_count = pd_cluster_stacked.iloc[i, :].sum()
-            for j in range(pd_cluster_stacked.shape[1]):
-                pd_cluster_stacked.iloc[i, j] = pd_cluster_stacked.iloc[i, j] / total_count
-    # check if dataframe is empty
-    if pd_cluster_stacked.shape[0] == 0:
-        plt.close()
-        return
-    pd_cluster_stacked.plot(kind='barh', stacked=True, legend=False)
-    plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+
+    # use custom plotting function if specified
+    if plot_from_df != None:
+        plot_from_df(plt, cm, pd, pd_cluster_stacked)
+    else:
+        if proportion:
+            for i in range(pd_cluster_stacked.shape[0]):
+                total_count = pd_cluster_stacked.iloc[i, :].sum()
+                for j in range(pd_cluster_stacked.shape[1]):
+                    pd_cluster_stacked.iloc[i, j] = pd_cluster_stacked.iloc[i, j] / total_count
+        # check if dataframe is empty
+        if pd_cluster_stacked.shape[0] == 0:
+            plt.close()
+            return
+        pd_cluster_stacked.plot(kind='barh', stacked=True, legend=False)
+        plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+
     plt.xlabel(y_label)
     plt.ylabel(x_label)
     proc_plot(plt)
