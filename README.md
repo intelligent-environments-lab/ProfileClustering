@@ -1,7 +1,9 @@
 # Apples or Oranges? Identification of fundamental load shape profiles for benchmarking buildings using a large and diverse dataset 
 
-Project Collaborators
+Project Collaborators:
+
 Intelligent Environments Laboratory, UT Austin, (http://nagy.caee.utexas.edu)
+
 Building and Urban Data Science Lab, NUS Singapore, (http://www.budslab.org/) 
 
 A project focused on extracting the right topology of building utilization from raw whole building sensor data
