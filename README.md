@@ -20,6 +20,7 @@ A project focused on extracting the right topology of building utilization from 
 ## Clustering & Validation
 
 - [Clustering](Clustering%20Analysis/Clustering.ipynb): Generate building clusters based on daily energy profiles using K-Means, Bisecting K-Means and Gaussian Mixture Model
+- [Clustering Validation Metrics](Clustering%20Analysis/Clustering%20Validation%20Metrics.ipynb): Calculate validation metrics for the clustering results for different choice of k and different algorithms
 
 ## Clustering Visualization
 
