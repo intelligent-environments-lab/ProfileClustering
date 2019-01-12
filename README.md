@@ -8,6 +8,10 @@ Building and Urban Data Science Lab, NUS Singapore, (http://www.budslab.org/)
 
 A project focused on extracting the right topology of building utilization from raw whole building sensor data
 
+## Citation of this project
+
+- June Young Park, Xiya Yang, Clayton Miller, Pandarasamy Arjunan, Zoltan Nagy, Apples or oranges? Identification of fundamental load shape profiles for benchmarking buildings using a large and diverse dataset, Applied Energy, Volume 236, Febuary 2019, Pages 1280-1295, https://doi.org/10.1016/j.apenergy.2018.12.025
+
 ## Data collection & Preprocessing
 
 - With multiple data sources (i.e., UTEXAS, MIT, PECAN, IRELAND, GENOME, ...), we choose .hdf5 data format to deal with a large size dataset. All the raw datasets are uploaded externally due to the limitation of uploading size. The data is transformed as .hdf5 file format. After running two ipython notebook below, we would get a complete hdf5 file for the whole dataset with complete metadata. 
