@@ -8,10 +8,6 @@ Building and Urban Data Science Lab, NUS Singapore, (http://www.budslab.org/)
 
 A project focused on extracting the right topology of building utilization from raw whole building sensor data
 
-Publication:
-
-Park, June Young, et al. "Apples or oranges? Identification of fundamental load shape profiles for benchmarking buildings using a large and diverse dataset." Applied Energy 236 (2019): 1280-1295. (https://www.sciencedirect.com/science/article/pii/S0306261918318439)
-
 ## Citation of this project
 
 - June Young Park, Xiya Yang, Clayton Miller, Pandarasamy Arjunan, Zoltan Nagy, Apples or oranges? Identification of fundamental load shape profiles for benchmarking buildings using a large and diverse dataset, Applied Energy, Volume 236, Febuary 2019, Pages 1280-1295, https://doi.org/10.1016/j.apenergy.2018.12.025
